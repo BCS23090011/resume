@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style="background-color: 	#e0e0e0;">
+
+<nav>
+  <div class="logo">Exploring</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="resume-table">
+  <div class="profile-pic" style="margin-top: 40px;">
+    <img src="self face.jpg" alt="Profile Picture">
+  </div>
+
+  <div class="profile-details">
+    <h2>Kelvin Kee Kwong Yew</h2>
+    <p><strong>Email:</strong> keekelvin87@email.com</p>
+    <p><strong>Phone:</strong> +60-111-6497725</p>
+    <p><strong>Location:</strong> Sarawak, Malaysia</p>
+    <p><strong>Short Summary:</strong> Computer Science student in UTS (Unversity of Technology Sarawak) with strong interest in data analysis and machine learning.</p>
+  </div>
+
+</div>
+
+  <div class="about">
+
+    <section id="about">
+
+    <h2><i class="fa-solid fa-user"></i> About Me</h2>
+
+        <p>Hi! I'm Kelvin Kee Kwong Yew, a 21-year-old Computer Science student at the University of Technology Sarawak (UTS).</p>
+        <p>I'm passionate about data analysis, machine learning, and web development. I enjoy turning complex problems into simple solutions through code and continuously learning new technologies.</p>
+        <p>My current focus is on building practical skills and working on projects that help me grow as a future machine learning engineer or data analyst.</p>
+
+    </section>
+
+    <section id="skills">
+        
+    <h2><i class="fa-solid fa-code"></i> Skills</h2>
+
+  <div class="skills-container">
+    <!-- Column 1 -->
+    <div class="skills-column">
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        <span>HTML & CSS</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-python"></i>
+        <span>Python</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 45%;"></div></div>
+      </div>
+      <div class="skill">
+        <img src="https://img.icons8.com/color/48/000000/microsoft-excel-2019.png" alt="Excel Icon" style="width: 20px; vertical-align: middle;">
+        <span>Excel</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="skills-column">
+      <div class="skill">
+        <i class="fa-solid fa-database"></i>
+        <span>Data Analysis (Pandas, NumPy)</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-brain"></i>
+        <span>Machine Learning (Scikit-learn)</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 25%;"></div></div>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-people-group"></i>
+        <span>Teamwork & Communication</span>
+        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="projects">
+
+  <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+
+  <div class="project">
+    <h3>🛒 Web-Based Shopping Platform (Online Vegetable Ordering System - Sarawak Farm to Table)</h3>
+    <p>Developed a responsive web application for online vegetable purchases using HTML, CSS, and JavaScript. Features include product browsing, cart system, and checkout logic.</p>
+    <p><strong>Note:</strong> The backend database hosted on Render has expired, and the project has been deleted from Render entirely. As a result, the frontend is no longer accessible, and the live version cannot be viewed.</p>
+    <a href="https://github.com/BCS23090011/shopping_platform" target="_blank"> View on GitHub <i class="fa-brands fa-github"></i></a>
+  </div>
+
+  <div class="project">
+    <h3>🤖 UTS AI Assistant Chatbot</h3>
+     <p>Built a web-based AI assistant using the ChatGPT API to answer questions based only on UTS website information (up to Bachelor's degree). Ensures accurate academic knowledge retrieval. This was also the first web project I was involved in, so the design is minimal — the main focus was ensuring core functionality.</p>
+  <p><strong>Note:</strong> The API key used for this project has expired, so the chatbot may no longer respond as expected.</p>
+    <a href="https://github.com/BCS23090011/UTS_ASSISTANT" target="_blank">View on GitHub <i class="fa-brands fa-github"></i></a><br>
+    <a href="https://uts-assistant.onrender.com/" target="_blank" class="visit-link">Visit Site <i class="fa-solid fa-up-right-from-square"></i></a>
+  </div>
+
+  <div class="project">
+    <h3>🧠 Sibu-Sarawak LLM Q&A System (In Progress)</h3>
+    <p>Currently developing a local LLM system using Qwen1.5-4B to respond to questions specifically about Sibu, Sarawak, and UTS. The model is fine-tuned locally using a custom RAG (Retrieval-Augmented Generation) pipeline with QLoRA and text classification techniques. Since it is pre-trained and runs locally, it does not require internet access to function.</p>
+    <p><em>Status:</em> In progress - expected to complete within 1 weeks</p>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact:</h2>
+  <p>Email: keekelvin87@gmail.com</p>
+  <p>Phone: +60 11-1649 7725</p>
+  <p>Address: 2B Lorong Deshon Timur 17A4,96000 Sibu, Sarawak, Malaysia</p>
+</section>
+
+
+  </div>
+
+  <button id="backToTop">↑</button>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+

@@ -1,0 +1,436 @@
+.resume-table {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.resume-table img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.profile-details h2 {
+  margin-top: 0;
+}
+
+.profile-details p {
+  margin: 6px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/*Describe part*/
+.about {
+  max-width: 800px;
+  margin: auto;
+  margin-top: -40px;
+  padding:0;
+}
+
+/*skills section part*/
+#skills {
+  max-width: 900px;
+  margin: auto;
+  padding:0;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill i {
+  color: #333;
+  margin-right: 10px;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-level {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+/* Project Section Layout */
+#projects {
+  max-width: 900px;
+  margin: auto;
+  padding: 0;
+}
+
+.project {
+  margin-bottom: 30px;
+  border-left: 4px solid #4CAF50;
+  padding-left: 15px;
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Link Styling */
+.project a {
+  display: inline-block;
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project a i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* GitHub Link */
+.project a[href*="github"] {
+  color: #333;
+}
+
+.project a[href*="github"]:hover {
+  color: #0056b3;
+}
+
+.project a[href*="github"]:hover i {
+  transform: translateX(3px);
+}
+
+/* Visit Site Link */
+.visit-link {
+  color: #333;
+}
+
+.visit-link:hover {
+  color: #0056b3;
+}
+
+.visit-link:hover i {
+  transform: scale(1.2);
+}
+
+/*ContactUS*/
+#contact {
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+
+#contact h2 {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+#contact-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #45a049;
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* 🔧 Beautiful Mobile Styling */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+    font-size: 24px;
+  }
+
+  .nav-links {
+    width: 100%;
+    position: static;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background-color: #333;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+
+  /* Resume Table */
+  .resume-table {
+    display: block;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .resume-table img {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .profile-details h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .profile-details p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  /* About + Skills */
+  .about,
+  #skills,
+  #projects,
+  #contact {
+    padding: 0 15px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .skills-column {
+    width: 100%;
+  }
+
+  .skill span {
+    font-size: 14px;
+  }
+
+  .skill-bar {
+    height: 6px;
+  }
+
+  /* Project Section */
+  .project {
+    padding: 10px 0;
+    border-left: none;
+    border-top: 3px solid #4CAF50;
+  }
+
+  .project h3 {
+    font-size: 16px;
+  }
+
+  .project p {
+    font-size: 14px;
+  }
+
+  .project a {
+    font-size: 14px;
+  }
+
+  /* Contact form */
+  #contact h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 14px;
+  }
+
+  #contact-form button {
+    font-size: 16px;
+  }
+
+  /* Back to Top button */
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+}
+
+
+
+/* --- Visual Enhancements --- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Navbar improvements */
+nav {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 12px 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links li a {
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #333;
+}
+
+/* Section layout improvements */
+#about, #skills, #projects, #contact {
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Project card styling */
+.project {
+  background-color: #f9f9f9;
+  border-left: 4px solid #4CAF50;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact form card */
+#contact-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+
+/* Back to top button polish */
+#backToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+#backToTop:hover {
+  transform: scale(1.1);
+}
